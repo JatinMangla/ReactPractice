@@ -7,6 +7,7 @@ import Singleton from './single';
 import Car from './Cards'
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import Location from '../src/geolocation/Location'
+import Img from './Component/RandomImg'
 
 
 /*const App = () => {
@@ -58,7 +59,7 @@ function APp()
 
 
 ReactDOM.render(
-    <Car/>,
+    <Img/>,
   document.getElementById('root')
 );
 
