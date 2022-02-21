@@ -1,13 +1,19 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import photo1 from './image/photo1.jpg'
-import Singleton from './single';
-//import {Map, GoogleApiWrapper} from 'google-map-react'
-//import DetailsMap from './map'
+import reportWebVitals from './reportWebVitals';
+import CounterOne from './Component/ReduxSimple';
+import Test from './test'
+import ParentComp from './Component/UseMemo';
+import FocusInput from './Component/UseRef';
+// import photo1 from './image/photo1.jpg'
+// import Singleton from './single';
 import Car from './Cards'
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
-import Location from '../src/geolocation/Location'
-import Img from './Component/RandomImg'
+//import Location from '../src/geolocation/Location'
+ import Img from './Component/RandomImg'
+//import Contact from './contactUs'
+import Login from './Component/Login';
+import HookCounterOne from './Component/UseEffect';
+
 
 
 /*const App = () => {
@@ -57,10 +63,48 @@ function APp()
 
 }*/
 
+class Last extends Component
+{
+  render()
+  {
+    return(
+      <div>    
+      <div>
+         <Test></Test>
+      </div>
+      </div>
+
+    )
+  }
+}
+
+
+function MemoComp({ name }) {
+  console.log('Rendering MemoComponent')
+  return (
+    <div>
+      {name}
+    </div>
+  )
+}
+export default React.memo(MemoComp)
 
 ReactDOM.render(
-    <Img/>,
+
+  <React.StrictMode>
+
+    {/* {<CounterOne/>} */}
+  
+    {/* {<ParentComp/>} */}
+    {/* {<FocusInput/>} */}
+    {<HookCounterOne/>}
+
+  </React.StrictMode>,
+
   document.getElementById('root')
+
 );
+
+reportWebVitals();
 
 

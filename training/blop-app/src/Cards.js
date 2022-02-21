@@ -5,43 +5,14 @@ import taj from '../src/image/taj.jpg';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import qutub from './image/qutub.jpg'
 import hawa from './image/hawa.jpg'
-import {Navbar,Container,Nav,Button,Form,FormControl} from 'react-bootstrap'
 
 class Car extends Component
 {
     render()
     {
-
-        
         return(
-            <div>  
-                    <div>
-                    <Navbar bg="dark" variant="dark">
-                    <Container>
-                    <Navbar.Brand href="#home">Tourism</Navbar.Brand>
-                    <Nav className="me-auto">
-                        <Nav.Link href="#home">Home</Nav.Link>
-                        <Nav.Link href="#features">Package</Nav.Link>
-                        <Nav.Link href="#pricing">Contact Us</Nav.Link>
-                    </Nav>
-                    <Form className="d-flex">
-        <FormControl
-          type="search"
-          placeholder="Search"
-          className="me-2"
-          aria-label="Search"
-        />
-        <Button variant="outline-success">Search</Button>
-      </Form>
-                    </Container>
-                    </Navbar>
-                    </div>
-
-                    <div>
-                        <br></br>
-                        <br></br>
-                    </div>
-                
+            <div>
+                <br></br>
             <div className="div.container-fluid d-flex justify-content-center" >
                 <div className="row">
                     <div className="col-md-3" ><Card image={gate} Title="India Gate" long="28.612894" lat="77.229446" next="https://www.holidify.com/places/delhi/india-gate-sightseeing-1718.html"  
@@ -55,11 +26,12 @@ class Car extends Component
                 </div>
             </div>
             </div>
- 
-          
+           
+
 
         )
     }
 }
 
 export default Car
+
